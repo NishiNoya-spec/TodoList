@@ -1,0 +1,94 @@
+
+
+/* Всплывающее окно для добавления нового листа */
+.popup-sreen-add-new-list {
+  position: fixed;
+  border: 4px solid rgb(255, 0, 43);
+  background-color: black;
+  padding: 20px;
+}
+
+/* Шапка всплывающего окна */
+.popup-screen-add-new-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.popup-screen-add-new-list-header-number {
+  font-size: 26px;
+  font-weight: bold;
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-screen-add-new-list-header-close-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+}
+
+.popup-screen-add-new-list-header-close-button,
+.popup-sreen-add-new-list-create-button {
+  flex: 1;
+  height: 100%;
+  background-color: orangered;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Имя листа всплывающего окна */
+.popup-screen-add-new-list-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-screen-add-new-list-name-text,
+.popup-screen-add-new-list-date-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: orangered;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.popup-screen-add-new-list-name-input-wrapper,
+.popup-screen-add-new-list-date-input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.popup-screen-add-new-list-name-input,
+.popup-screen-add-new-list-date-input {
+  height: 30px;
+  border: 5px solid orangered;
+  background: transparent;
+  color: orangered;
+  padding: 4px 8px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.popup-screen-add-new-list-name-input::placeholder {
+  color: rgba(255, 68, 0, 0.555);
+}
+
+.popup-screen-add-new-list-date-input::-webkit-calendar-picker-indicator {
+  background-color: orangered;
+}
+
+.popup-sreen-add-new-list-create-button-wrapper {
+  display: flex;
+  margin-top: 14px;
+}
+
+.popup-sreen-add-new-list-create-button {
+  padding: 12px 20px;
+}

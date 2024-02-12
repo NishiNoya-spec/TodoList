@@ -1,0 +1,159 @@
+/* Общий стиль кнопки */
+.default-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-button {
+  flex: 1;
+  height: 100%;
+  background-color: orangered;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* list */
+.list {
+  border: 2px solid orangered;
+  padding-bottom: 20px;
+  padding-right: 16px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* header-todolist */
+.header-todolist {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header-todolist-info */
+.header-todolist-info {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+/* левая сторона */
+.header-todolist-info-left-part {
+  display: flex;
+}
+
+.todolist-number-wrapper,
+.todolist-name-wrapper {
+  font-size: 26px;
+  font-weight: bold;
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todolist-number-wrapper {
+  width: 96px;
+}
+
+.delete-todo-list-wrapper {
+  display: flex;
+  width: 130px;
+  margin-left: 20px;
+}
+
+/* правая сторона */
+.header-todolist-info-right-part {
+  display: flex;
+}
+
+.header-todolist-info-right-part-timestamp-name,
+.header-todolist-info-right-part-timestamp-function {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: orangered;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.header-todolist-info-right-part-timestamp-name {
+  text-decoration: underline;
+}
+
+
+/* header-todolist-interface */
+.header-todolist-interface {
+  display: grid;
+  grid-template-columns: 40px 40px 1fr 170px 130px;
+  column-gap: 8px;
+  row-gap: 6px;
+}
+
+.number-wrapper,
+.check-wrapper,
+.input-todo-wrapper,
+.input-date-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-wrapper {
+  font-size: 20px;
+  color: orangered;
+}
+
+.material-symbols-outlined {
+  color: orangered;
+}
+
+.check-box {
+  /*accent-color: rgb(255, 68, 0);*/
+  cursor: pointer;
+}
+
+.input-todo,
+.input-date {
+  height: 30px;
+  border: 5px solid orangered;
+  background: transparent;
+  color: orangered;
+  padding: 4px 8px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.input-todo::placeholder {
+  color: rgba(255, 68, 0, 0.555);
+}
+
+.input-date::-webkit-calendar-picker-indicator {
+  background-color: orangered;
+}
+
+/* todo-tasks */
+.todo-tasks {
+  display: grid;
+  grid-template-columns: 40px 40px 1fr 170px 130px;
+  column-gap: 8px;
+  row-gap: 6px;
+  height: 48px;
+  margin-top: 6px;
+}
+
+.todo-wrapper,
+.date-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: orangered;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.task-checked {
+  text-decoration: line-through;
+  color: rgba(255, 68, 0, 0.575);
+}
